@@ -9,9 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/notice")
 public class NoticeController {
 
+
     //공지사항 리스트 페이지
     @GetMapping({"","/"})
     public String notice(){
         return "notice/list";
     }
+
+
 }
